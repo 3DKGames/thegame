@@ -1,5 +1,6 @@
 package thegame.environment.displays.city 
 {
+	import flash.display.DisplayObject;
 	import thegame.environment.displays.Displays;
 	/**
 	 * ...
@@ -11,6 +12,9 @@ package thegame.environment.displays.city
 		public function DisplayCity() 
 		{
 			
+		}
+		public function addChar($char:DisplayObject) {
+			addChild($char);
 		}
 		
 	}

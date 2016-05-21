@@ -46,10 +46,6 @@ package thegame.environment
 			
 		}
 		protected function onFocusEvent($evt:UniversalEvent):void {
-			trace(this);
-			trace($evt.arg);
-			trace(_obj_name);
-			trace($evt.arg == _obj_name);
 			if (_obj_name == $evt.arg) {
 				onFocusIn();
 			} else {

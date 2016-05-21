@@ -53,8 +53,9 @@
   <!-- SWC Libraries -->
   <libraryPaths>
     <element path="libs\DemoLib.swc" />
-    <element path="libs\Environment.swc" />
     <element path="libs\CityLib.swc" />
+    <element path="libs\EnvironmentLib.swc" />
+    <element path="libs\UintLib.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
