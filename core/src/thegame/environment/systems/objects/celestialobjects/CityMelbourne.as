@@ -9,7 +9,7 @@ package thegame.environment.systems.objects.celestialobjects
 		
 		public function CityMelbourne() 
 		{
-			
+			_obj_name = "City Melbourne"
 		}
 		
 	}

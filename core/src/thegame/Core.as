@@ -24,6 +24,7 @@ package thegame
 		public function Core() 
 		{
 			_game_engine = SingletonUtil.singleton(CoreEngine);
+			_game_engine.swcdev = false;
 			_game_engine.addEventListener(UniversalEvent.TIME_EVENT, onTimerEvent);
 			if (stage) {
 				init();
@@ -44,6 +45,10 @@ package thegame
 		}
 		private function onTimerEvent($evt:UniversalEvent):void {
 			trace(">>>GAME HEARd EVENT");
+			if (!_game_engine.runonce) {
+				_game_engine.runonce = true;
+				_game_engine.focusOn("City Melbourne");
+			}
 		}
 		
 	}

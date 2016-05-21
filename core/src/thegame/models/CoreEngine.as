@@ -14,6 +14,8 @@ package thegame.models
 		private var _game_time:Number;
 		
 		private var _gameTimer:Timer;
+		public var runonce:Boolean = false;
+		public var swcdev:Boolean = true;
 		
 		public function CoreEngine() 
 		{
@@ -35,8 +37,9 @@ package thegame.models
 		private function onTimerEvent($evt:TimerEvent):void {
 			dispatchEvent(new UniversalEvent(UniversalEvent.TIME_EVENT));
 		}
-		public function focusOn($object:String):void {
-			
+		public function focusOn($target:String):void {
+			trace("DISPATCH");
+			dispatchEvent(new UniversalEvent(UniversalEvent.FOCUS_ON_OBJECT,false,false,$target));
 		}
 	}
 
