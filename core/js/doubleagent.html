@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title>
+<script type="text/javascript" src="script/jquery.js"></script>
+<script type="text/javascript" src="script/page.js"></script>
+<script type="text/javascript" src="bte_script/behaviors.js"></script>
+
+<script type="text/javascript" src="script/agent.js"></script>
+
+<script type="text/javascript" src="script/facility.js"></script>
+<script type="text/javascript" src="script/sector.js"></script>
+<script type="text/javascript" src="script/city.js"></script>
+
+<script type="text/javascript" src="script/game.js"></script>
+
+
+
+<style>
+p{
+	margin:0px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+*{
+	box-sizing:border-box;
+}
+
+
+.sector{
+	background-color: rgba(38,150,255,0.50);
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border: 1px red solid;
+	padding: 2px;
+	margin: 1px;
+	font-size:11px;
+}
+#db{
+	height:200px;
+	overflow-x:hidden;
+}
+
+
+</style>
+</head>
+
+
+<body>
+<div id="gClock"></div>
+
+<div><span class="gameTime"></span><span class="gameTick"></span></div>
+<div id="City"></div>
+<div id="trace"></div>
+
+
+
+<script type="text/javascript" >
+
+Game.initialize();
+
+
+</script>
+</body>
+<div class="city">
+    <div class="city_info">
+        <span class="population"></span>
+    </div>
+</div>
+
+<div class="sector">
+<div class="name"></div>
+    <div class="sector_info">
+        <span class="population"></span>
+        <span class="income"></span>
+        <span class="position"></span>
+    </div>
+    <div class="facilities">
+    </div>
+    <div class="units">
+    </div>        	
+</div>
+<div id="db"></div>
+</html>
